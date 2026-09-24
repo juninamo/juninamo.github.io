@@ -158,6 +158,7 @@ html.en [lang="ja"] { display: none !important; }
   height: 140px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: 50% 35%;
   border: 1px solid var(--border);
 }
 
