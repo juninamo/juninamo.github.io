@@ -33,7 +33,6 @@
     "jobTitle": "Assistant Professor",
     "url": "https://juninamo.github.io/",
     "image": "https://juninamo.github.io/images/profile-600.jpg",
-    "email": "mailto:juninamo@keio.jp",
     "affiliation": {
       "@type": "CollegeOrUniversity",
       "name": "Keio University School of Medicine, Department of Microbiology and Immunology"
@@ -116,7 +115,7 @@
         <a href="https://orcid.org/0000-0002-9927-7936" rel="noopener">ORCID</a>
         <a href="https://researchmap.jp/juninamo" rel="noopener">researchmap</a>
         <a href="https://github.com/juninamo" rel="noopener">GitHub</a>
-        <a href="mailto:juninamo@keio.jp">Email</a>
+        <a href="#contact" class="js-mail" data-u="juninamo" data-d="keio.jp">Email</a>
       </p>
     </div>
   </header>
@@ -477,7 +476,7 @@
       <h2><span lang="ja">連絡先・リンク</span><span lang="en">Contact &amp; Links</span></h2>
       <dl class="contact">
         <dt>Email</dt>
-        <dd><a href="mailto:juninamo@keio.jp">juninamo@keio.jp</a></dd>
+        <dd><a href="#contact" class="js-mail" data-u="juninamo" data-d="keio.jp">juninamo<span class="at" role="img" aria-label="at"></span>keio.jp</a></dd>
         <dt>Google Scholar</dt>
         <dd><a href="https://scholar.google.com/citations?user=ikxer9AAAAAJ&amp;hl=en" rel="noopener">scholar.google.com/citations?user=ikxer9AAAAAJ</a></dd>
         <dt>ORCID</dt>
@@ -500,6 +499,14 @@
   </footer>
 
   <script>
+    // Email address is assembled on click so it never appears in the HTML source
+    document.querySelectorAll('.js-mail').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        location.href = 'mailto:' + a.dataset.u + String.fromCharCode(64) + a.dataset.d;
+      });
+    });
+
     function setLang(lang) {
       var root = document.documentElement;
       root.classList.toggle('en', lang === 'en');
