@@ -3,566 +3,514 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="稲毛 純 (Jun Inamo) — 慶應義塾大学医学部 助教。計算免疫学・空間トランスクリプトーム・シングルセル解析・機械学習で自己免疫疾患の病態解明とプレシジョン・メディシンを研究。">
-  <title>稲毛 純 | Jun Inamo — Computational Immunology</title>
+  <title>稲毛 純 (Jun Inamo) | Computational Immunology | Keio University</title>
+  <meta name="description" content="稲毛 純 (Jun Inamo, MD, PhD) — 慶應義塾大学医学部 微生物学・免疫学教室 助教。空間トランスクリプトーム・シングルセル解析・ロングリードシーケンス・機械学習で自己免疫疾患の病態解明とプレシジョン・メディシンを目指す計算免疫学者・リウマチ専門医。">
+  <meta name="author" content="Jun Inamo">
+  <link rel="canonical" href="https://juninamo.github.io/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b57a4'/%3E%3Ctext x='32' y='43' font-family='Helvetica,Arial,sans-serif' font-size='30' font-weight='700' fill='%23fff' text-anchor='middle'%3EJI%3C/text%3E%3C/svg%3E">
+
+  <!-- Open Graph / SNS -->
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://juninamo.github.io/">
+  <meta property="og:title" content="稲毛 純 (Jun Inamo) | Computational Immunology">
+  <meta property="og:description" content="Assistant Professor, Keio University School of Medicine. Spatial transcriptomics, single-cell and long-read sequencing, and machine learning for autoimmune diseases.">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:locale:alternate" content="en_US">
+  <!-- 写真を追加したら有効化: <meta property="og:image" content="https://juninamo.github.io/images/profile.jpg"> -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@InamoJun">
+
+  <!-- Structured data for search engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jun Inamo",
+    "alternateName": ["稲毛 純", "稲毛純", "Inamo Jun"],
+    "honorificSuffix": "MD, PhD",
+    "jobTitle": "Assistant Professor",
+    "url": "https://juninamo.github.io/",
+    "email": "mailto:juninamo@keio.jp",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "Keio University School of Medicine, Department of Microbiology and Immunology"
+    },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Keio University" },
+    "knowsAbout": ["Computational immunology", "Spatial transcriptomics", "Single-cell analysis", "Long-read sequencing", "Machine learning", "Rheumatology", "Autoimmune diseases", "Sjögren's disease", "Rheumatoid arthritis"],
+    "identifier": { "@type": "PropertyValue", "propertyID": "ORCID", "value": "0000-0002-9927-7936" },
+    "sameAs": [
+      "https://orcid.org/0000-0002-9927-7936",
+      "https://scholar.google.com/citations?user=ikxer9AAAAAJ",
+      "https://researchmap.jp/juninamo",
+      "https://github.com/juninamo",
+      "https://x.com/InamoJun",
+      "https://www.linkedin.com/in/jun-inamo-8949ba235/"
+    ]
+  }
+  </script>
+
+  <!-- Apply saved / requested language before first paint -->
+  <script>
+    (function () {
+      var lang = new URLSearchParams(location.search).get('lang');
+      if (!lang) { try { lang = localStorage.getItem('lang'); } catch (e) {} }
+      if (!lang) { lang = (navigator.language || '').toLowerCase().indexOf('ja') === 0 ? 'ja' : 'en'; }
+      if (lang === 'en') { document.documentElement.classList.add('en'); document.documentElement.lang = 'en'; }
+    })();
+  </script>
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Language Toggle -->
-  <div class="lang-toggle">
-    <button class="lang-btn active" onclick="switchLang('ja')">JA</button>
-    <button class="lang-btn" onclick="switchLang('en')">EN</button>
-  </div>
+  <a class="skip-link" href="#main">
+    <span lang="ja">本文へ移動</span><span lang="en">Skip to content</span>
+  </a>
 
-  <!-- ===== Hero ===== -->
-  <header class="hero">
-    <div class="hero-bg" aria-hidden="true"></div>
-    <div class="hero-content">
-      <p class="hero-eyebrow">// Computational Immunology &amp; Genomics</p>
-      <h1>稲毛 純</h1>
-      <p class="subtitle">Jun Inamo, M.D., Ph.D.</p>
-
-      <p class="bio" lang="ja">
-        リウマチ・膠原病を専門とする医師であり、計算免疫学の研究者。空間トランスクリプトームやシングルセル解析、機械学習といったオミックス・計算解析を駆使して、関節リウマチ・シェーグレン病・若年性特発性関節炎などの自己免疫疾患がなぜ・どのように起こるのかをヒトの組織・血液から読み解き、一人ひとりに最適な予防・診断・治療（プレシジョン・メディシン）の実現を目指している。
-      </p>
-      <p class="bio" lang="en">
-        A rheumatologist and computational immunologist. Using omics and computational approaches — spatial transcriptomics, single-cell analysis, and machine learning — I dissect how and why autoimmune diseases such as rheumatoid arthritis, Sjögren's disease, and juvenile idiopathic arthritis arise from human tissue and blood, working toward precision medicine tailored to each patient's prevention, diagnosis, and treatment.
-      </p>
-
-      <div class="affiliations">
-        <span lang="ja">慶應義塾大学 医学部 微生物学・免疫学教室 助教</span>
-        <span lang="en">Assistant Professor · Microbiology &amp; Immunology, Keio University</span>
-        <span lang="ja">東京科学大学 難治疾患研究所 非常勤講師</span>
-        <span lang="en">Part-time Lecturer · Institute of Science Tokyo</span>
-        <span lang="ja">理化学研究所 IMS 客員研究員</span>
-        <span lang="en">Visiting Researcher · RIKEN IMS</span>
+  <!-- ===== Top bar ===== -->
+  <nav class="topbar" aria-label="Sections">
+    <div class="topbar-inner">
+      <div class="nav-links">
+        <a href="#research"><span lang="ja">研究</span><span lang="en">Research</span></a>
+        <a href="#publications"><span lang="ja">論文</span><span lang="en">Publications</span></a>
+        <a href="#funding"><span lang="ja">研究資金</span><span lang="en">Funding</span></a>
+        <a href="#awards"><span lang="ja">受賞</span><span lang="en">Awards</span></a>
+        <a href="#career"><span lang="ja">経歴</span><span lang="en">Career</span></a>
+        <a href="#contact"><span lang="ja">連絡先</span><span lang="en">Contact</span></a>
       </div>
-
-      <div class="hero-links">
-        <a href="https://researchmap.jp/juninamo" target="_blank" rel="noopener">researchmap</a>
-        <a href="https://orcid.org/0000-0002-9927-7936" target="_blank" rel="noopener">ORCID</a>
+      <div class="lang-toggle" role="group" aria-label="Language">
+        <button type="button" class="lang-btn" data-lang="ja" aria-pressed="true">日本語</button>
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">English</button>
       </div>
-    </div>
-  </header>
-
-  <!-- ===== Navigation ===== -->
-  <nav class="nav">
-    <div class="nav-inner">
-      <a href="#research" class="nav-link" lang="ja">研究</a>
-      <a href="#research" class="nav-link" lang="en">Research</a>
-      <a href="#career" class="nav-link" lang="ja">経歴</a>
-      <a href="#career" class="nav-link" lang="en">Career</a>
-      <a href="#education" class="nav-link" lang="ja">学歴</a>
-      <a href="#education" class="nav-link" lang="en">Education</a>
-      <a href="#awards" class="nav-link" lang="ja">受賞</a>
-      <a href="#awards" class="nav-link" lang="en">Awards</a>
-      <a href="#publications" class="nav-link" lang="ja">論文</a>
-      <a href="#publications" class="nav-link" lang="en">Publications</a>
-      <a href="#funding" class="nav-link" lang="ja">研究資金</a>
-      <a href="#funding" class="nav-link" lang="en">Funding</a>
-      <a href="#teaching" class="nav-link" lang="ja">教育</a>
-      <a href="#teaching" class="nav-link" lang="en">Teaching</a>
-      <a href="#societies" class="nav-link" lang="ja">所属学会</a>
-      <a href="#societies" class="nav-link" lang="en">Societies</a>
     </div>
   </nav>
 
-  <main class="container">
+  <!-- ===== Profile ===== -->
+  <header class="profile container">
+    <!-- 写真を追加したら有効化:
+    <img class="avatar" src="images/profile.jpg" alt="Jun Inamo" width="140" height="140">
+    -->
+    <div class="profile-text">
+      <h1><span lang="ja">稲毛 純</span><span lang="en">Jun Inamo</span></h1>
+      <p class="subtitle"><span lang="ja">Jun Inamo, M.D., Ph.D.</span><span lang="en">M.D., Ph.D. · 稲毛 純</span></p>
 
-    <!-- ===== Research Fields & Keywords ===== -->
-    <section id="research" class="section fade-in">
-      <p class="section-eyebrow">01 — Research</p>
-      <h2 class="section-title" lang="ja">研究分野・キーワード</h2>
-      <h2 class="section-title" lang="en">Research Fields &amp; Keywords</h2>
+      <ul class="affiliations">
+        <li lang="ja">慶應義塾大学 医学部 微生物学・免疫学教室 助教</li>
+        <li lang="en">Assistant Professor, Department of Microbiology and Immunology, Keio University School of Medicine</li>
+        <li lang="ja">理化学研究所 生命医科学研究センター 客員研究員</li>
+        <li lang="en">Visiting Researcher, RIKEN Center for Integrative Medical Sciences</li>
+        <li lang="ja">東京科学大学 難治疾患研究所 非常勤講師</li>
+        <li lang="en">Part-time Lecturer, Institute of Science Tokyo</li>
+      </ul>
 
-      <div class="fields-grid">
-        <div class="field-card">
-          <div class="field-category">Life Science</div>
-          <div class="field-name" lang="ja">計算免疫学 / システムゲノム科学</div>
-          <div class="field-name" lang="en">Computational Immunology / Systems Genomics</div>
-        </div>
-        <div class="field-card">
-          <div class="field-category">Life Science</div>
-          <div class="field-name" lang="ja">ゲノム生物学 / ゲノム免疫学</div>
-          <div class="field-name" lang="en">Genome Biology / Genomic Immunology</div>
-        </div>
-        <div class="field-card">
-          <div class="field-category">Life Science</div>
-          <div class="field-name" lang="ja">リウマチ・膠原病学</div>
-          <div class="field-name" lang="en">Rheumatology &amp; Connective Tissue Disease</div>
-        </div>
-      </div>
+      <p class="bio" lang="ja">
+        リウマチ・膠原病を専門とする医師であり、計算免疫学の研究者。空間トランスクリプトーム、シングルセル解析、ロングリードシーケンス、機械学習を用いて、関節リウマチ・シェーグレン病・若年性特発性関節炎・全身性エリテマトーデスなどの自己免疫疾患がなぜ・どのように起こるのかをヒトの組織と血液から読み解き、一人ひとりに最適な予防・診断・治療（プレシジョン・メディシン）の実現を目指しています。
+      </p>
+      <p class="bio" lang="en">
+        I am a rheumatologist and computational immunologist. Using spatial transcriptomics, single-cell analysis, long-read sequencing, and machine learning, I study how and why autoimmune diseases such as rheumatoid arthritis, Sjögren's disease, juvenile idiopathic arthritis, and systemic lupus erythematosus arise in human tissue and blood, with the goal of precision medicine for prevention, diagnosis, and treatment.
+      </p>
 
-      <div class="tags">
-        <span class="tag">Spatial Transcriptomics</span>
-        <span class="tag">Single-cell Analysis</span>
-        <span class="tag" lang="ja">バイオインフォマティクス</span>
-        <span class="tag" lang="en">Bioinformatics</span>
-        <span class="tag" lang="ja">機械学習</span>
-        <span class="tag" lang="en">Machine Learning</span>
-        <span class="tag" lang="ja">オミックス解析</span>
-        <span class="tag" lang="en">Omics Analysis</span>
-        <span class="tag" lang="ja">ゲノム免疫学</span>
-        <span class="tag" lang="en">Genomic Immunology</span>
-        <span class="tag" lang="ja">膠原病</span>
-        <span class="tag" lang="en">Connective Tissue Disease</span>
-      </div>
-    </section>
+      <p class="profile-links">
+        <a href="https://scholar.google.com/citations?user=ikxer9AAAAAJ&amp;hl=en" rel="noopener">Google Scholar</a>
+        <a href="https://orcid.org/0000-0002-9927-7936" rel="noopener">ORCID</a>
+        <a href="https://researchmap.jp/juninamo" rel="noopener">researchmap</a>
+        <a href="https://github.com/juninamo" rel="noopener">GitHub</a>
+        <a href="mailto:juninamo@keio.jp">Email</a>
+      </p>
+    </div>
+  </header>
 
-    <!-- ===== Career ===== -->
-    <section id="career" class="section fade-in">
-      <p class="section-eyebrow">02 — Career</p>
-      <h2 class="section-title" lang="ja">経歴</h2>
-      <h2 class="section-title" lang="en">Career</h2>
+  <main id="main" class="container">
 
-      <div class="timeline">
-        <div class="timeline-item current">
-          <div class="timeline-period">2025.8 –</div>
-          <div class="timeline-title" lang="ja">助教</div>
-          <div class="timeline-title" lang="en">Assistant Professor</div>
-          <div class="timeline-org" lang="ja">慶應義塾大学 医学部 微生物学・免疫学教室</div>
-          <div class="timeline-org" lang="en">Keio University School of Medicine, Dept. of Microbiology &amp; Immunology</div>
-        </div>
+    <!-- ===== Research ===== -->
+    <section id="research" class="section">
+      <h2><span lang="ja">研究内容</span><span lang="en">Research</span></h2>
 
-        <div class="timeline-item current">
-          <div class="timeline-period">2025.9 –</div>
-          <div class="timeline-title" lang="ja">客員研究員</div>
-          <div class="timeline-title" lang="en">Visiting Researcher</div>
-          <div class="timeline-org" lang="ja">理化学研究所 生命医科学研究センター ヒト免疫遺伝研究チーム</div>
-          <div class="timeline-org" lang="en">RIKEN Center for Integrative Medical Sciences, Human Immunogenetics Team</div>
-        </div>
-
-        <div class="timeline-item current">
-          <div class="timeline-period">2022.10 –</div>
-          <div class="timeline-title" lang="ja">非常勤講師</div>
-          <div class="timeline-title" lang="en">Part-time Lecturer</div>
-          <div class="timeline-org" lang="ja">東京科学大学（旧 東京医科歯科大学） 難治疾患研究所 ゲノム機能多様性分野</div>
-          <div class="timeline-org" lang="en">Institute of Science Tokyo (formerly TMDU), Institute for Intractable Diseases</div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-period">2022.10 – 2025.7</div>
-          <div class="timeline-title" lang="ja">ポスドク研究員</div>
-          <div class="timeline-title" lang="en">Postdoctoral Fellow</div>
-          <div class="timeline-org" lang="ja">コロラド大学 医学部 計算オミクス・システム免疫学ラボ（Fan Zhang Lab）</div>
-          <div class="timeline-org" lang="en">University of Colorado, Computational Omics &amp; Systems Immunology Lab (Fan Zhang Lab)</div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-period">2024.1 – 2025.7</div>
-          <div class="timeline-title" lang="ja">特任助教</div>
-          <div class="timeline-title" lang="en">Research Assistant Professor</div>
-          <div class="timeline-org" lang="ja">慶應義塾大学 医学部 内科学教室（リウマチ・膠原病）</div>
-          <div class="timeline-org" lang="en">Keio University School of Medicine, Dept. of Internal Medicine (Rheumatology)</div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-period">2021.4 – 2022.9</div>
-          <div class="timeline-title" lang="ja">特別研究員PD（日本学術振興会）</div>
-          <div class="timeline-title" lang="en">JSPS Research Fellow (PD)</div>
-          <div class="timeline-org" lang="ja">東京医科歯科大学 難治疾患研究所 ゲノム機能多様性分野</div>
-          <div class="timeline-org" lang="en">TMDU, Institute for Intractable Diseases, Genome Functional Diversity Lab</div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-period">2017.4 – 2021.3</div>
-          <div class="timeline-title" lang="ja">助教</div>
-          <div class="timeline-title" lang="en">Assistant Professor</div>
-          <div class="timeline-org" lang="ja">慶應義塾大学 医学部 内科学教室（リウマチ・膠原病）</div>
-          <div class="timeline-org" lang="en">Keio University School of Medicine, Dept. of Internal Medicine (Rheumatology)</div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-period">2016.4 – 2017.3</div>
-          <div class="timeline-title" lang="ja">後期研修医</div>
-          <div class="timeline-title" lang="en">Senior Residency</div>
-          <div class="timeline-org" lang="ja">川崎市立川崎病院 総合内科</div>
-          <div class="timeline-org" lang="en">Kawasaki Municipal Hospital, General Internal Medicine</div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-period">2014.4 – 2016.3</div>
-          <div class="timeline-title" lang="ja">初期研修医</div>
-          <div class="timeline-title" lang="en">Junior Residency</div>
-          <div class="timeline-org" lang="ja">横浜市立市民病院</div>
-          <div class="timeline-org" lang="en">Yokohama Municipal Citizen's Hospital</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== Education ===== -->
-    <section id="education" class="section fade-in">
-      <p class="section-eyebrow">03 — Education</p>
-      <h2 class="section-title" lang="ja">学歴</h2>
-      <h2 class="section-title" lang="en">Education</h2>
-
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-period">2017.4 – 2021.3</div>
-          <div class="timeline-title" lang="ja">博士課程（医学）</div>
-          <div class="timeline-title" lang="en">Ph.D. in Medicine</div>
-          <div class="timeline-org" lang="ja">慶應義塾大学 大学院医学研究科</div>
-          <div class="timeline-org" lang="en">Keio University Graduate School of Medicine</div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-period">2008.4 – 2014.3</div>
-          <div class="timeline-title" lang="ja">医学士</div>
-          <div class="timeline-title" lang="en">M.D.</div>
-          <div class="timeline-org" lang="ja">慶應義塾大学 医学部 医学科</div>
-          <div class="timeline-org" lang="en">Keio University School of Medicine</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== Awards ===== -->
-    <section id="awards" class="section fade-in">
-      <p class="section-eyebrow">04 — Honors</p>
-      <h2 class="section-title" lang="ja">受賞</h2>
-      <h2 class="section-title" lang="en">Awards &amp; Honors</h2>
-
-      <ul class="award-list">
-        <li class="award-item">
-          <span class="award-year">2026</span>
-          <div class="award-info">
-            <div class="award-name" lang="ja">奨励賞</div>
-            <div class="award-name" lang="en">Encouragement Award</div>
-            <div class="award-org" lang="ja">日本リウマチ学会</div>
-            <div class="award-org" lang="en">Japan College of Rheumatology</div>
-          </div>
+      <ul class="themes">
+        <li>
+          <h3 lang="ja">比較空間病理学と線維芽細胞ニッチ</h3>
+          <h3 lang="en">Comparative spatial pathology and fibroblast niches</h3>
+          <p lang="ja">空間トランスクリプトームとシングルセル解析により、シェーグレン病や若年性特発性関節炎などの病変組織で、免疫細胞と間質細胞（線維芽細胞）がどのように相互作用して慢性炎症を形づくるかを疾患横断的に解析しています。</p>
+          <p lang="en">Using spatial transcriptomics and single-cell profiling, I compare diseased tissues across conditions such as Sjögren's disease and juvenile idiopathic arthritis to understand how immune–stromal (fibroblast) interactions shape chronic inflammation.</p>
         </li>
-        <li class="award-item">
-          <span class="award-year">2026</span>
-          <div class="award-info">
-            <div class="award-name">EULAR Congress Travel Bursary</div>
-            <div class="award-org">European Alliance of Associations for Rheumatology (EULAR)</div>
-          </div>
+        <li>
+          <h3 lang="ja">アイソフォーム・スプライシングと疾患の遺伝的リスク</h3>
+          <h3 lang="en">Isoforms, splicing, and genetic risk</h3>
+          <p lang="ja">免疫細胞のロングリードシーケンスとQTL解析を組み合わせ、自己免疫疾患の遺伝的リスクがスプライシング変化を介して病態につながる仕組みを調べ、創薬標的となるアイソフォームの同定を目指しています。</p>
+          <p lang="en">Combining long-read sequencing of immune cells with QTL analysis, I investigate how genetic risk for autoimmune diseases acts through alternative splicing, aiming to identify isoforms as therapeutic targets.</p>
         </li>
-        <li class="award-item">
-          <span class="award-year">2025</span>
-          <div class="award-info">
-            <div class="award-name">Emerging Investigator Excellence Award</div>
-            <div class="award-org">American College of Rheumatology (ACR)</div>
-          </div>
+        <li>
+          <h3 lang="ja">深層免疫表現型解析による発症予測と層別化</h3>
+          <h3 lang="en">Deep immunophenotyping for prediction and stratification</h3>
+          <p lang="ja">血液のマルチオミクス解析と機械学習により、関節リウマチ発症前のリスク保有者やループス腎炎、高齢発症関節炎の患者を層別化し、発症予測や病態に基づく治療選択につなげる研究を行っています。</p>
+          <p lang="en">With blood multi-omic profiling and machine learning, I stratify individuals at risk for rheumatoid arthritis and patients with lupus nephritis or elderly-onset arthritis to predict disease onset and guide mechanism-based treatment.</p>
         </li>
-        <li class="award-item">
-          <span class="award-year">2024</span>
-          <div class="award-info">
-            <div class="award-name">Colorado Pilot Program</div>
-            <div class="award-org">Colorado Clinical &amp; Translational Sciences Institute</div>
-          </div>
-        </li>
-        <li class="award-item">
-          <span class="award-year">2024</span>
-          <div class="award-info">
-            <div class="award-name" lang="ja">海外特別研究員</div>
-            <div class="award-name" lang="en">Overseas Research Fellow</div>
-            <div class="award-org" lang="ja">日本学術振興会 (JSPS)</div>
-            <div class="award-org" lang="en">Japan Society for the Promotion of Science (JSPS)</div>
-          </div>
-        </li>
-        <li class="award-item">
-          <span class="award-year">2023</span>
-          <div class="award-info">
-            <div class="award-name">Emerging Investigator Excellence Award</div>
-            <div class="award-org">American College of Rheumatology (ACR)</div>
-          </div>
-        </li>
-        <li class="award-item">
-          <span class="award-year">2023</span>
-          <div class="award-info">
-            <div class="award-name" lang="ja">海外留学助成</div>
-            <div class="award-name" lang="en">Overseas Research Grant</div>
-            <div class="award-org" lang="ja">上原記念生命科学財団</div>
-            <div class="award-org" lang="en">Uehara Memorial Foundation</div>
-          </div>
-        </li>
+      </ul>
+
+      <h3 class="subhead"><span lang="ja">キーワード</span><span lang="en">Keywords</span></h3>
+      <ul class="tags">
+        <li>Spatial Transcriptomics</li>
+        <li>Single-cell Analysis</li>
+        <li>Long-read Sequencing</li>
+        <li>Machine Learning</li>
+        <li><span lang="ja">バイオインフォマティクス</span><span lang="en">Bioinformatics</span></li>
+        <li><span lang="ja">ゲノム免疫学</span><span lang="en">Genomic Immunology</span></li>
+        <li><span lang="ja">リウマチ・膠原病</span><span lang="en">Rheumatology</span></li>
       </ul>
     </section>
 
     <!-- ===== Selected Publications ===== -->
-    <section id="publications" class="section fade-in">
-      <p class="section-eyebrow">05 — Publications</p>
-      <h2 class="section-title" lang="ja">主要論文</h2>
-      <h2 class="section-title" lang="en">Selected Publications</h2>
+    <section id="publications" class="section">
+      <h2><span lang="ja">主要論文</span><span lang="en">Selected Publications</span></h2>
+      <p class="note">
+        <span lang="ja"><strong>太字</strong>は本人。印は筆頭著者（First）・責任著者（Corresponding）を示します。</span>
+        <span lang="en">My name is in <strong>bold</strong>. Labels mark first and corresponding authorship.</span>
+      </p>
 
-      <div class="pub-list">
-
-        <div class="pub-item">
-          <div class="pub-title">
-            <a href="https://www.medrxiv.org/content/10.64898/2026.02.12.26346058v1" target="_blank" rel="noopener">
-              Longitudinal peripheral blood multi-omic profiling in seropositive individuals identifies immune endotypes and predictive models for future rheumatoid arthritis conversion
-            </a>
-          </div>
+      <ol class="pubs">
+        <li>
+          <a class="pub-title" href="https://www.medrxiv.org/content/10.64898/2026.02.12.26346058v1" rel="noopener">Longitudinal peripheral blood multi-omic profiling in seropositive individuals identifies immune endotypes and predictive models for future rheumatoid arthritis conversion</a>
           <div class="pub-authors"><strong>Jun Inamo</strong>, Aleksandra Bylinska, Miles Smith, et al.</div>
-          <div class="pub-meta">
-            <span class="pub-year">2026</span>
-            <span class="pub-badge first-author">First Author</span>
-          </div>
-        </div>
-
-        <div class="pub-item">
-          <div class="pub-title">
-            <a href="https://doi.org/10.1126/sciadv.aeb2491" target="_blank" rel="noopener">
-              Identification of a shared antigen linking CD4+ T and B cell pathology in Sjögren's disease
-            </a>
-          </div>
+          <div class="pub-meta"><cite>medRxiv (preprint)</cite>, 2026 <span class="badge">First</span></div>
+        </li>
+        <li>
+          <a class="pub-title" href="https://doi.org/10.1126/sciadv.aeb2491" rel="noopener">Identification of a shared antigen linking CD4+ T and B cell pathology in Sjögren's disease</a>
           <div class="pub-authors">Masaru Takeshita, <strong>Jun Inamo</strong>, Seiki Wakui, et al.</div>
-          <div class="pub-meta">
-            <span class="pub-journal">Science Advances</span>
-            <span class="pub-year">2026</span>
-          </div>
-        </div>
-
-        <div class="pub-item">
-          <div class="pub-title">
-            <a href="https://doi.org/10.1172/jci.insight.198074" target="_blank" rel="noopener">
-              Spatial transcriptomics reveals immune–stromal crosstalk within the synovium of patients with juvenile idiopathic arthritis
-            </a>
-          </div>
+          <div class="pub-meta"><cite>Science Advances</cite>, 2026</div>
+        </li>
+        <li>
+          <a class="pub-title" href="https://doi.org/10.1172/jci.insight.198074" rel="noopener">Spatial transcriptomics reveals immune–stromal crosstalk within the synovium of patients with juvenile idiopathic arthritis</a>
           <div class="pub-authors"><strong>Jun Inamo</strong>, Roselyn Fierkens, Michael R. Clay, Anna Helena Jonsson, et al.</div>
-          <div class="pub-meta">
-            <span class="pub-journal">JCI Insight</span>
-            <span class="pub-year">2025</span>
-            <span class="pub-badge first-author">First Author</span>
-            <span class="pub-badge corresponding">Corresponding</span>
-          </div>
-        </div>
-
-        <div class="pub-item">
-          <div class="pub-title">
-            <a href="https://doi.org/10.1038/s41467-025-63935-9" target="_blank" rel="noopener">
-              Comparative single-cell and spatial profiling of anti-SSA-positive and anti-centromere-positive Sjögren's disease
-            </a>
-          </div>
+          <div class="pub-meta"><cite>JCI Insight</cite>, 2025 <span class="badge">First</span> <span class="badge">Corresponding</span></div>
+        </li>
+        <li>
+          <a class="pub-title" href="https://doi.org/10.1038/s41467-025-63935-9" rel="noopener">Comparative single-cell and spatial profiling of anti-SSA-positive and anti-centromere-positive Sjögren's disease</a>
           <div class="pub-authors"><strong>Jun Inamo</strong>, Masaru Takeshita, Katsuya Suzuki, et al.</div>
-          <div class="pub-meta">
-            <span class="pub-journal">Nature Communications</span>
-            <span class="pub-year">2025</span>
-            <span class="pub-badge first-author">First Author</span>
-            <span class="pub-badge corresponding">Corresponding</span>
-          </div>
-        </div>
-
-        <div class="pub-item">
-          <div class="pub-title">
-            <a href="https://doi.org/10.1172/jci185217" target="_blank" rel="noopener">
-              Deep immunophenotyping reveals circulating activated lymphocytes in individuals at risk for rheumatoid arthritis
-            </a>
-          </div>
+          <div class="pub-meta"><cite>Nature Communications</cite>, 2025 <span class="badge">First</span> <span class="badge">Corresponding</span></div>
+        </li>
+        <li>
+          <a class="pub-title" href="https://doi.org/10.1172/jci185217" rel="noopener">Deep immunophenotyping reveals circulating activated lymphocytes in individuals at risk for rheumatoid arthritis</a>
           <div class="pub-authors"><strong>Jun Inamo</strong>, Joshua Keegan, Alec Griffith, et al.</div>
-          <div class="pub-meta">
-            <span class="pub-journal">Journal of Clinical Investigation</span>
-            <span class="pub-year">2025</span>
-            <span class="pub-badge first-author">First Author</span>
-          </div>
-        </div>
-
-        <div class="pub-item">
-          <div class="pub-title">
-            <a href="https://doi.org/10.1002/advs.202503289" target="_blank" rel="noopener">
-              CellPhenoX: An Explainable Machine Learning Method for Identifying Cell Phenotypes
-            </a>
-          </div>
-          <div class="pub-authors">Jade Young, <strong>Jun Inamo</strong>, Zachary Caterer, Revanth Krishna, Fan Zhang</div>
-          <div class="pub-meta">
-            <span class="pub-journal">Advanced Science</span>
-            <span class="pub-year">2025</span>
-          </div>
-        </div>
-
-        <div class="pub-item">
-          <div class="pub-title">
-            <a href="https://doi.org/10.1038/s41467-024-48615-4" target="_blank" rel="noopener">
-              Long-read sequencing for 29 immune cell subsets reveals disease-linked isoforms
-            </a>
-          </div>
-          <div class="pub-authors"><strong>Jun Inamo</strong>, Akari Suzuki, Mahoko Takahashi Ueda, et al.</div>
-          <div class="pub-meta">
-            <span class="pub-journal">Nature Communications</span>
-            <span class="pub-year">2024</span>
-            <span class="pub-badge first-author">First Author</span>
-          </div>
-        </div>
-
-        <div class="pub-item">
-          <div class="pub-title">
-            <a href="https://doi.org/10.1016/j.xgen.2024.100654" target="_blank" rel="noopener">
-              Functional and dynamic profiling of transcript isoforms reveals essential roles of alternative splicing in interferon response
-            </a>
-          </div>
-          <div class="pub-authors">Mahoko Takahashi Ueda, <strong>Jun Inamo</strong>, Akari Suzuki, et al.</div>
-          <div class="pub-meta">
-            <span class="pub-journal">Cell Genomics</span>
-            <span class="pub-year">2024</span>
-          </div>
-        </div>
-
-        <div class="pub-item">
-          <div class="pub-title">
-            <a href="https://doi.org/10.1016/j.immuni.2023.06.013" target="_blank" rel="noopener">
-              Expression of the readthrough transcript CiDRE in alveolar macrophages boosts SARS-CoV-2 susceptibility and promotes COVID-19 severity
-            </a>
-          </div>
-          <div class="pub-authors">Yuichi Mitsui, Tatsuya Suzuki, Kanako Kuniyoshi, <strong>Jun Inamo</strong>, et al.</div>
-          <div class="pub-meta">
-            <span class="pub-journal">Immunity</span>
-            <span class="pub-year">2023</span>
-          </div>
-        </div>
-
-        <div class="pub-item">
-          <div class="pub-title">
-            <a href="https://doi.org/10.1172/jci181034" target="_blank" rel="noopener">
-              Blood immunophenotyping identifies distinct kidney histopathology and outcomes in patients with lupus nephritis
-            </a>
-          </div>
+          <div class="pub-meta"><cite>Journal of Clinical Investigation</cite>, 2025 <span class="badge">First</span></div>
+        </li>
+        <li>
+          <a class="pub-title" href="https://doi.org/10.1172/jci181034" rel="noopener">Blood immunophenotyping identifies distinct kidney histopathology and outcomes in patients with lupus nephritis</a>
           <div class="pub-authors">Alice Horisberger, Alec Griffith, Joshua Keegan, <strong>Jun Inamo</strong> (equal contribution), et al.</div>
-          <div class="pub-meta">
-            <span class="pub-journal">Journal of Clinical Investigation</span>
-            <span class="pub-year">2025</span>
-          </div>
-        </div>
+          <div class="pub-meta"><cite>Journal of Clinical Investigation</cite>, 2025</div>
+        </li>
+        <li>
+          <a class="pub-title" href="https://doi.org/10.1002/advs.202503289" rel="noopener">CellPhenoX: An Explainable Machine Learning Method for Identifying Cell Phenotypes</a>
+          <div class="pub-authors">Jade Young, <strong>Jun Inamo</strong>, Zachary Caterer, Revanth Krishna, Fan Zhang</div>
+          <div class="pub-meta"><cite>Advanced Science</cite>, 2025</div>
+        </li>
+        <li>
+          <a class="pub-title" href="https://doi.org/10.1038/s41467-024-48615-4" rel="noopener">Long-read sequencing for 29 immune cell subsets reveals disease-linked isoforms</a>
+          <div class="pub-authors"><strong>Jun Inamo</strong>, Akari Suzuki, Mahoko Takahashi Ueda, et al.</div>
+          <div class="pub-meta"><cite>Nature Communications</cite>, 2024 <span class="badge">First</span></div>
+        </li>
+        <li>
+          <a class="pub-title" href="https://doi.org/10.1016/j.xgen.2024.100654" rel="noopener">Functional and dynamic profiling of transcript isoforms reveals essential roles of alternative splicing in interferon response</a>
+          <div class="pub-authors">Mahoko Takahashi Ueda, <strong>Jun Inamo</strong>, Akari Suzuki, et al.</div>
+          <div class="pub-meta"><cite>Cell Genomics</cite>, 2024</div>
+        </li>
+        <li>
+          <a class="pub-title" href="https://doi.org/10.1016/j.immuni.2023.06.013" rel="noopener">Expression of the readthrough transcript CiDRE in alveolar macrophages boosts SARS-CoV-2 susceptibility and promotes COVID-19 severity</a>
+          <div class="pub-authors">Yuichi Mitsui, Tatsuya Suzuki, Kanako Kuniyoshi, <strong>Jun Inamo</strong>, et al.</div>
+          <div class="pub-meta"><cite>Immunity</cite>, 2023</div>
+        </li>
+      </ol>
 
-      </div>
-
-      <p class="section-cta">
-        <a href="https://researchmap.jp/juninamo/published_papers" target="_blank" rel="noopener">
-          <span lang="ja">全論文一覧（researchmap）→</span>
-          <span lang="en">Full publication list (researchmap) →</span>
-        </a>
+      <p class="more">
+        <span lang="ja">全論文：</span><span lang="en">Full list: </span>
+        <a href="https://scholar.google.com/citations?user=ikxer9AAAAAJ&amp;hl=en" rel="noopener">Google Scholar</a> ·
+        <a href="https://researchmap.jp/juninamo/published_papers" rel="noopener">researchmap</a> ·
+        <a href="https://orcid.org/0000-0002-9927-7936" rel="noopener">ORCID</a>
       </p>
     </section>
 
     <!-- ===== Funding ===== -->
-    <section id="funding" class="section fade-in">
-      <p class="section-eyebrow">06 — Funding</p>
-      <h2 class="section-title" lang="ja">研究資金</h2>
-      <h2 class="section-title" lang="en">Research Funding</h2>
+    <section id="funding" class="section">
+      <h2><span lang="ja">研究資金</span><span lang="en">Research Funding</span></h2>
 
-      <div class="funding-list">
-        <div class="funding-item">
-          <div class="funding-title" lang="ja">創発的研究支援事業</div>
-          <div class="funding-title" lang="en">FOREST — Fusion Oriented Research for Disruptive Science and Technology</div>
-          <div class="funding-source" lang="ja">科学技術振興機構（JST）</div>
-          <div class="funding-source" lang="en">Japan Science and Technology Agency (JST)</div>
-          <div class="funding-period">2026 –</div>
-        </div>
-
-        <div class="funding-item">
-          <div class="funding-title" lang="ja">新規ゲノムワイドQTL解析手法による免疫障害性疾患の病態解明および治療法の創出</div>
-          <div class="funding-title" lang="en">Elucidation of immune-mediated disease pathogenesis and therapeutic development via novel genome-wide QTL analysis</div>
-          <div class="funding-source" lang="ja">科学研究費助成事業 若手研究（JSPS KAKENHI）</div>
-          <div class="funding-source" lang="en">JSPS KAKENHI — Grant-in-Aid for Early-Career Scientists</div>
-          <div class="funding-period">2022 – 2025</div>
-        </div>
-
-        <div class="funding-item">
-          <div class="funding-title" lang="ja">レトロトランスポゾン領域を介したシェーグレン症候群の病態機序の解明</div>
-          <div class="funding-title" lang="en">Elucidation of pathogenic mechanisms in Sjögren's syndrome via retrotransposon elements</div>
-          <div class="funding-source" lang="ja">特別研究員奨励費（JSPS）</div>
-          <div class="funding-source" lang="en">JSPS Research Fellowship for Young Scientists</div>
-          <div class="funding-period">2021 – 2024</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== Teaching ===== -->
-    <section id="teaching" class="section fade-in">
-      <p class="section-eyebrow">07 — Teaching</p>
-      <h2 class="section-title" lang="ja">担当教育</h2>
-      <h2 class="section-title" lang="en">Teaching</h2>
-
-      <ul class="society-list">
-        <li class="society-item" lang="ja">免疫学 — 慶應義塾大学（2026年〜）</li>
-        <li class="society-item" lang="en">Immunology — Keio University (since 2026)</li>
-        <li class="society-item" lang="ja">情報科学実習 — 慶應義塾大学（2026年〜）</li>
-        <li class="society-item" lang="en">Informatics Practicum — Keio University (since 2026)</li>
+      <ul class="entries">
+        <li>
+          <div class="when">2026.8 – 2030.3</div>
+          <div>
+            <div class="what" lang="ja">比較空間病理学と線維芽細胞から紐解く自己免疫の設計原理</div>
+            <div class="what" lang="en">Decoding the design principles of autoimmunity through comparative spatial pathology and fibroblasts</div>
+            <div class="where" lang="ja">科学技術振興機構（JST）創発的研究支援事業</div>
+            <div class="where" lang="en">JST FOREST (Fusion Oriented REsearch for disruptive Science and Technology)</div>
+          </div>
+        </li>
+        <li>
+          <div class="when">2026.10 – 2027.9</div>
+          <div>
+            <div class="what" lang="ja">全身性エリテマトーデスの遺伝的リスクがスプライシングを介して病態へ翻訳される分子機序の解明</div>
+            <div class="what" lang="en">Molecular mechanisms by which genetic risk for systemic lupus erythematosus is translated into pathology through splicing</div>
+            <div class="where" lang="ja">三菱財団 自然科学研究助成（若手助成）</div>
+            <div class="where" lang="en">Mitsubishi Foundation, Research Grant in the Natural Sciences (Early-Career)</div>
+          </div>
+        </li>
+        <li>
+          <div class="when">2026.9 – 2029.3</div>
+          <div>
+            <div class="what" lang="ja">深層免疫表現型解析による高齢発症関節炎の病態解明</div>
+            <div class="what" lang="en">Elucidating the pathogenesis of elderly-onset arthritis through deep immunophenotyping</div>
+            <div class="where" lang="ja">日本医療研究開発機構（AMED）免疫アレルギー疾患実用化研究事業</div>
+            <div class="where" lang="en">AMED, Practical Research Project for Allergic Diseases and Immunology</div>
+          </div>
+        </li>
+        <li>
+          <div class="when">2026.8 – 2029.3</div>
+          <div>
+            <div class="what" lang="ja">バイオバンク多層データと一細胞ロングリード解析の統合による自己免疫疾患のスプライシング変動解明と創薬標的アイソフォームの同定</div>
+            <div class="what" lang="en">Integrating multi-layered biobank data with single-cell long-read sequencing to uncover splicing alterations in autoimmune diseases and identify druggable isoforms</div>
+            <div class="where" lang="ja">日本医療研究開発機構（AMED）次世代医療実現バイオバンク利活用プログラム</div>
+            <div class="where" lang="en">AMED, Biobank Utilization Program for Next-Generation Medicine</div>
+          </div>
+        </li>
+        <li>
+          <div class="when">2022.4 – 2025.3</div>
+          <div>
+            <div class="what" lang="ja">新規ゲノムワイドQTL解析手法による免疫障害性疾患の病態解明および治療法の創出</div>
+            <div class="what" lang="en">Elucidating the pathogenesis of immune-mediated diseases and developing therapies with a novel genome-wide QTL analysis method</div>
+            <div class="where" lang="ja">日本学術振興会 科学研究費助成事業 若手研究</div>
+            <div class="where" lang="en">JSPS KAKENHI, Grant-in-Aid for Early-Career Scientists</div>
+          </div>
+        </li>
+        <li>
+          <div class="when">2021.4 – 2024.3</div>
+          <div>
+            <div class="what" lang="ja">レトロトランスポゾン領域を介したシェーグレン症候群の病態機序の解明</div>
+            <div class="what" lang="en">Pathogenic mechanisms of Sjögren's syndrome mediated by retrotransposon regions</div>
+            <div class="where" lang="ja">日本学術振興会 科学研究費助成事業 特別研究員奨励費</div>
+            <div class="where" lang="en">JSPS KAKENHI, Grant-in-Aid for JSPS Fellows</div>
+          </div>
+        </li>
       </ul>
     </section>
 
-    <!-- ===== Societies ===== -->
-    <section id="societies" class="section fade-in">
-      <p class="section-eyebrow">08 — Memberships</p>
-      <h2 class="section-title" lang="ja">所属学会</h2>
-      <h2 class="section-title" lang="en">Professional Memberships</h2>
+    <!-- ===== Awards ===== -->
+    <section id="awards" class="section">
+      <h2><span lang="ja">受賞・フェローシップ</span><span lang="en">Awards &amp; Fellowships</span></h2>
 
-      <ul class="society-list">
-        <li class="society-item" lang="ja">日本リウマチ学会（2016年〜）</li>
-        <li class="society-item" lang="en">Japan College of Rheumatology (since 2016)</li>
-        <li class="society-item" lang="ja">日本内科学会（2016年〜）</li>
-        <li class="society-item" lang="en">Japanese Society of Internal Medicine (since 2016)</li>
+      <ul class="entries">
+        <li>
+          <div class="when">2026</div>
+          <div>
+            <div class="what" lang="ja">日本リウマチ学会 奨励賞</div>
+            <div class="what" lang="en">Young Investigator Award, Japan College of Rheumatology</div>
+          </div>
+        </li>
+        <li>
+          <div class="when">2026</div>
+          <div><div class="what">EULAR Congress 2026 Travel Bursary</div></div>
+        </li>
+        <li>
+          <div class="when">2025</div>
+          <div><div class="what">Emerging Investigator Excellence Award, American College of Rheumatology</div></div>
+        </li>
+        <li>
+          <div class="when">2024</div>
+          <div><div class="what">Colorado Pilot Program Award, Colorado Clinical and Translational Sciences Institute</div></div>
+        </li>
+        <li>
+          <div class="when">2024</div>
+          <div>
+            <div class="what" lang="ja">日本学術振興会 海外特別研究員</div>
+            <div class="what" lang="en">JSPS Overseas Research Fellowship</div>
+          </div>
+        </li>
+        <li>
+          <div class="when">2023</div>
+          <div><div class="what">Emerging Investigator Excellence Award, American College of Rheumatology</div></div>
+        </li>
+        <li>
+          <div class="when">2023</div>
+          <div>
+            <div class="what" lang="ja">上原記念生命科学財団 海外留学助成</div>
+            <div class="what" lang="en">Uehara Memorial Foundation Overseas Research Fellowship</div>
+          </div>
+        </li>
       </ul>
     </section>
 
-    <!-- ===== Links ===== -->
-    <section id="links" class="section fade-in">
-      <p class="section-eyebrow">09 — Connect</p>
-      <h2 class="section-title" lang="ja">リンク</h2>
-      <h2 class="section-title" lang="en">Links</h2>
+    <!-- ===== Career ===== -->
+    <section id="career" class="section">
+      <h2><span lang="ja">経歴</span><span lang="en">Career</span></h2>
 
-      <div class="links-grid">
-        <a class="link-card" href="https://researchmap.jp/juninamo" target="_blank" rel="noopener">
-          <span class="link-icon">◆</span>
+      <ul class="entries">
+        <li>
+          <div class="when">2025.9 –</div>
           <div>
-            <div class="link-label">researchmap</div>
-            <div class="link-url">researchmap.jp/juninamo</div>
+            <div class="what" lang="ja">客員研究員</div>
+            <div class="what" lang="en">Visiting Researcher</div>
+            <div class="where" lang="ja">理化学研究所 生命医科学研究センター ヒト免疫遺伝研究チーム</div>
+            <div class="where" lang="en">RIKEN Center for Integrative Medical Sciences, Human Immunogenetics Team</div>
           </div>
-        </a>
-        <a class="link-card" href="https://orcid.org/0000-0002-9927-7936" target="_blank" rel="noopener">
-          <span class="link-icon">●</span>
+        </li>
+        <li>
+          <div class="when">2025.8 –</div>
           <div>
-            <div class="link-label">ORCID</div>
-            <div class="link-url">0000-0002-9927-7936</div>
+            <div class="what" lang="ja">助教</div>
+            <div class="what" lang="en">Assistant Professor</div>
+            <div class="where" lang="ja">慶應義塾大学 医学部 微生物学・免疫学教室</div>
+            <div class="where" lang="en">Department of Microbiology and Immunology, Keio University School of Medicine</div>
           </div>
-        </a>
-      </div>
+        </li>
+        <li>
+          <div class="when">2022.10 –</div>
+          <div>
+            <div class="what" lang="ja">非常勤講師</div>
+            <div class="what" lang="en">Part-time Lecturer</div>
+            <div class="where" lang="ja">東京科学大学（旧 東京医科歯科大学）難治疾患研究所 ゲノム機能多様性分野</div>
+            <div class="where" lang="en">Institute of Science Tokyo (formerly TMDU), Institute for Intractable Diseases, Genome Functional Diversity Lab</div>
+          </div>
+        </li>
+        <li>
+          <div class="when">2024.1 – 2025.7</div>
+          <div>
+            <div class="what" lang="ja">特任助教</div>
+            <div class="what" lang="en">Research Assistant Professor</div>
+            <div class="where" lang="ja">慶應義塾大学 医学部 内科学教室（リウマチ・膠原病）</div>
+            <div class="where" lang="en">Division of Rheumatology, Department of Internal Medicine, Keio University School of Medicine</div>
+          </div>
+        </li>
+        <li>
+          <div class="when">2022.10 – 2025.7</div>
+          <div>
+            <div class="what" lang="ja">ポスドク研究員</div>
+            <div class="what" lang="en">Postdoctoral Fellow</div>
+            <div class="where" lang="ja">コロラド大学 医学部 リウマチ科・Center for Health AI（Fan Zhang Lab）</div>
+            <div class="where" lang="en">Computational Omics and Systems Immunology Lab (Fan Zhang Lab), Division of Rheumatology and Center for Health AI, University of Colorado School of Medicine</div>
+          </div>
+        </li>
+        <li>
+          <div class="when">2021.4 – 2023.12</div>
+          <div>
+            <div class="what" lang="ja">非常勤助教</div>
+            <div class="what" lang="en">Part-time Assistant Professor</div>
+            <div class="where" lang="ja">慶應義塾大学 医学部 内科学教室（リウマチ・膠原病）</div>
+            <div class="where" lang="en">Division of Rheumatology, Department of Internal Medicine, Keio University School of Medicine</div>
+          </div>
+        </li>
+        <li>
+          <div class="when">2021.4 – 2022.9</div>
+          <div>
+            <div class="what" lang="ja">日本学術振興会 特別研究員（PD）</div>
+            <div class="what" lang="en">JSPS Research Fellow (PD)</div>
+            <div class="where" lang="ja">東京医科歯科大学 難治疾患研究所 ゲノム機能多様性分野</div>
+            <div class="where" lang="en">Tokyo Medical and Dental University (TMDU), Institute for Intractable Diseases, Genome Functional Diversity Lab</div>
+          </div>
+        </li>
+        <li>
+          <div class="when">2017.4 – 2021.3</div>
+          <div>
+            <div class="what" lang="ja">助教</div>
+            <div class="what" lang="en">Assistant Professor</div>
+            <div class="where" lang="ja">慶應義塾大学 医学部 内科学教室（リウマチ・膠原病）</div>
+            <div class="where" lang="en">Division of Rheumatology, Department of Internal Medicine, Keio University School of Medicine</div>
+          </div>
+        </li>
+        <li>
+          <div class="when">2016.4 – 2017.3</div>
+          <div>
+            <div class="what" lang="ja">後期研修医</div>
+            <div class="what" lang="en">Senior Resident</div>
+            <div class="where" lang="ja">川崎市立川崎病院 総合内科</div>
+            <div class="where" lang="en">General Internal Medicine, Kawasaki Municipal Kawasaki Hospital</div>
+          </div>
+        </li>
+        <li>
+          <div class="when">2014.4 – 2016.3</div>
+          <div>
+            <div class="what" lang="ja">初期研修医</div>
+            <div class="what" lang="en">Junior Resident</div>
+            <div class="where" lang="ja">横浜市立市民病院</div>
+            <div class="where" lang="en">Yokohama Municipal Citizen's Hospital</div>
+          </div>
+        </li>
+      </ul>
+
+      <h3 class="subhead"><span lang="ja">学歴</span><span lang="en">Education</span></h3>
+      <ul class="entries">
+        <li>
+          <div class="when">2017.4 – 2021.3</div>
+          <div>
+            <div class="what" lang="ja">博士（医学）</div>
+            <div class="what" lang="en">Ph.D. in Medical Science</div>
+            <div class="where" lang="ja">慶應義塾大学 大学院医学研究科</div>
+            <div class="where" lang="en">Keio University Graduate School of Medicine</div>
+          </div>
+        </li>
+        <li>
+          <div class="when">2008.4 – 2014.3</div>
+          <div>
+            <div class="what" lang="ja">医学士</div>
+            <div class="what" lang="en">M.D.</div>
+            <div class="where" lang="ja">慶應義塾大学 医学部 医学科</div>
+            <div class="where" lang="en">Keio University School of Medicine</div>
+          </div>
+        </li>
+      </ul>
+
+      <h3 class="subhead"><span lang="ja">担当教育</span><span lang="en">Teaching</span></h3>
+      <ul class="plain">
+        <li lang="ja">免疫学 — 慶應義塾大学（2026年〜）</li>
+        <li lang="en">Immunology — Keio University (2026–)</li>
+        <li lang="ja">情報科学実習 — 慶應義塾大学（2026年〜）</li>
+        <li lang="en">Information Science Practicum — Keio University (2026–)</li>
+      </ul>
+
+      <h3 class="subhead"><span lang="ja">所属学会</span><span lang="en">Memberships</span></h3>
+      <ul class="plain">
+        <li lang="ja">日本リウマチ学会（2016年〜）</li>
+        <li lang="en">Japan College of Rheumatology (2016–)</li>
+        <li lang="ja">日本内科学会（2016年〜）</li>
+        <li lang="en">Japanese Society of Internal Medicine (2016–)</li>
+      </ul>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section id="contact" class="section">
+      <h2><span lang="ja">連絡先・リンク</span><span lang="en">Contact &amp; Links</span></h2>
+      <dl class="contact">
+        <dt>Email</dt>
+        <dd><a href="mailto:juninamo@keio.jp">juninamo@keio.jp</a></dd>
+        <dt>Google Scholar</dt>
+        <dd><a href="https://scholar.google.com/citations?user=ikxer9AAAAAJ&amp;hl=en" rel="noopener">scholar.google.com/citations?user=ikxer9AAAAAJ</a></dd>
+        <dt>ORCID</dt>
+        <dd><a href="https://orcid.org/0000-0002-9927-7936" rel="noopener">0000-0002-9927-7936</a></dd>
+        <dt>researchmap</dt>
+        <dd><a href="https://researchmap.jp/juninamo" rel="noopener">researchmap.jp/juninamo</a></dd>
+        <dt>GitHub</dt>
+        <dd><a href="https://github.com/juninamo" rel="noopener">github.com/juninamo</a></dd>
+        <dt>X</dt>
+        <dd><a href="https://x.com/InamoJun" rel="noopener">@InamoJun</a></dd>
+        <dt>LinkedIn</dt>
+        <dd><a href="https://www.linkedin.com/in/jun-inamo-8949ba235/" rel="noopener">linkedin.com/in/jun-inamo-8949ba235</a></dd>
+      </dl>
     </section>
 
   </main>
 
-  <!-- ===== Footer ===== -->
-  <footer class="footer">
-    <p>&copy; 2026 Jun Inamo · 稲毛 純</p>
+  <footer class="footer container">
+    <p>&copy; 2026 Jun Inamo · <span lang="ja">最終更新 2026年9月</span><span lang="en">Last updated September 2026</span></p>
   </footer>
 
-  <!-- ===== Script ===== -->
   <script>
-    // Language Switch
-    function switchLang(lang) {
-      document.body.classList.toggle('en', lang === 'en');
-      document.querySelectorAll('.lang-btn').forEach(btn => {
-        btn.classList.toggle('active', btn.textContent.trim() === (lang === 'ja' ? 'JA' : 'EN'));
+    function setLang(lang) {
+      var root = document.documentElement;
+      root.classList.toggle('en', lang === 'en');
+      root.lang = lang;
+      document.querySelectorAll('.lang-btn').forEach(function (btn) {
+        btn.setAttribute('aria-pressed', String(btn.dataset.lang === lang));
       });
+      try { localStorage.setItem('lang', lang); } catch (e) {}
     }
-
-    // Scroll Fade-in
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, { threshold: 0.1 });
-
-    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-
-    // Active Nav Highlight
-    const sections = document.querySelectorAll('.section');
-    const navLinks = document.querySelectorAll('.nav-link');
-
-    window.addEventListener('scroll', () => {
-      let current = '';
-      sections.forEach(section => {
-        const top = section.offsetTop - 100;
-        if (pageYOffset >= top) {
-          current = section.getAttribute('id');
-        }
-      });
-      navLinks.forEach(link => {
-        link.classList.toggle('active', link.getAttribute('href') === '#' + current);
-      });
+    document.querySelectorAll('.lang-btn').forEach(function (btn) {
+      btn.setAttribute('aria-pressed', String(btn.dataset.lang === document.documentElement.lang));
+      btn.addEventListener('click', function () { setLang(btn.dataset.lang); });
     });
   </script>
 
